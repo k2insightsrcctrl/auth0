@@ -1,9 +1,9 @@
 {
-  "title": "Jan22 Dashboard2",
-  "name": "jan22-sso-dashboard",
+  "title": "auth0 Dashboard",
+  "name": "auth0-sso-dashboard",
   "version": "2.1.0",
   "preVersion": "1.1.6",
-  "author": "jan22",
+  "author": "auth0",
   "useHashName": false,
   "description": "This extension provides your users with a dashboard for all of their applications.",
   "type": "application",
