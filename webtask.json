@@ -1,0 +1,57 @@
+{
+  "title": "Jan Dashboard2",
+  "name": "jan-sso-dashboard",
+  "version": "2.1.0",
+  "preVersion": "1.1.6",
+  "author": "jan",
+  "useHashName": false,
+  "description": "This extension provides your users with a dashboard for all of their applications.",
+  "type": "application",
+  "category": "end_user",
+  "logoUrl": "https://cdn.auth0.com/extensions/auth0-sso-dashboard/assets/logo.svg",
+  "initialUrlPath": "/admins/login",
+  "repository": "https://github.com/k2insightsrcctrl/auth0",
+  "keywords": [
+    "auth0",
+    "extension"
+  ],
+  "auth0": {
+    "createClient": true,
+    "onUninstallPath": "/.extensions/on-uninstall",
+    "onInstallPath": "/.extensions/on-install",
+    "onUpdatePath": "/.extensions/on-update",
+    "scopes": "read:clients delete:clients read:connections read:resource_servers create:resource_servers read:client_grants create:client_grants delete:client_grants"
+  },
+  "secrets": {
+    "EXTENSION_CLIENT_ID": {
+      "description": "Client ID of the application you created in the Auth0 Management Dashboard",
+      "required": true
+    },
+    "TITLE": {
+      "description": "Custom title for the dashboard",
+      "example": "Fabrikam SSO Dashboard",
+      "required": false
+    },
+    "CUSTOM_CSS": {
+      "description": "A CSS file containing custom styles for the extension",
+      "example": "https://cdn.fabrikam.com/static/extensions/theme/fabrikam.css",
+      "required": false
+    },
+    "ALLOW_AUTHZ": {
+      "description": "Allow enabling of Authorization Extension integration (Deprecated)",
+      "type": "select",
+      "allowMultiple": false,
+      "default": "false",
+      "options": [
+        {
+          "value": "false",
+          "text": "No"
+        },
+        {
+          "value": "true",
+          "text": "Yes"
+        }
+      ]
+    }
+  }
+}
