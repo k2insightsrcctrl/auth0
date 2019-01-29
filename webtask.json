@@ -1,6 +1,6 @@
 {
   "title": "Jan Dashboard2",
-  "name": "jan-sso-dashboard",
+  "name": "auth0-sso-dashboard",
   "version": "2.1.0",
   "preVersion": "1.1.6",
   "author": "jan",
