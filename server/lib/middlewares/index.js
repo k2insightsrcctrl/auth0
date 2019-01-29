@@ -1,0 +1,1 @@
+export requireScope from './requireScope';
